@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registrar Instalación Deportiva</title>
+  <link rel="stylesheet" href="registro_instalacion.css" />
+</head>
+<body>
+  <h1>Registrar Instalación Deportiva</h1>
+  <form id="instalacionForm">
+    <label for="nombre">Nombre de la instalación:</label>
+    <input type="text" id="nombre" name="nombre" required />
+
+    <label for="tipo">Tipo de instalación:</label>
+    <select id="tipo" name="tipo" required>
+      <option value="">Seleccione</option>
+      <option value="gimnasio">Gimnasio</option>
+      <option value="cancha">Cancha</option>
+      <option value="piscina">Piscina</option>
+      <option value="otro">Otro</option>
+    </select>
+
+    <label for="capacidad">Capacidad máxima:</label>
+    <input type="number" id="capacidad" name="capacidad" required />
+
+    <label for="ubicacion">Ubicación:</label>
+    <input type="text" id="ubicacion" name="ubicacion" required />
+
+    <label>Horario disponible:</label>
+    <label for="hora_inicio">Hora de inicio:</label>
+    <input type="time" id="hora_inicio" name="hora_inicio" required />
+
+    <label for="hora_fin">Hora de fin:</label>
+    <input type="time" id="hora_fin" name="hora_fin" required />
+
+    <label for="fecha">Fecha disponible:</label>
+    <input type="date" id="fecha" name="fecha" required />
+
+    <label for="estado">Estado:</label>
+    <select id="estado" name="estado" required>
+      <option value="">Seleccione</option>
+      <option value="activa">Activa</option>
+      <option value="inactiva">Inactiva</option>
+    </select>
+
+    <button type="submit">Registrar</button>
+  </form>
+
+  <script src="registro_instalacion.js"></script>
+</body>
+</html>
