@@ -13,7 +13,7 @@ Este repositorio contiene las maquetas desarrolladas para cada historia de usuar
 
 ## Uso
 
-Abrir el archivo `index.html` en un navegador web para acceder a cada una de las maquetas disponibles.
+Clonar el repositorio, descargar y luego abrir el archivo `index.html` en un navegador web para acceder a cada una de las maquetas disponibles.
 
 Cada formulario tiene validación básica con JavaScript, estilos con CSS, y está pensado como prototipo funcional sin conexión a bases de datos ni backend.
 
