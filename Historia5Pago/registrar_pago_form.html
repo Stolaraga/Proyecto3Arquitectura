@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registrar Pago</title>
+  <link rel="stylesheet" href="registro_pago.css">
+</head>
+<body>
+  <h1>Registrar Pago</h1>
+  <form id="pagoForm">
+    <label for="cliente">ID del cliente:</label>
+    <input type="text" id="cliente" name="cliente" required />
+
+    <label for="clase">ID de la clase:</label>
+    <input type="text" id="clase" name="clase" required />
+
+    <label for="monto">Monto del pago:</label>
+    <input type="number" step="0.01" id="monto" name="monto" required />
+
+    <label for="fecha">Fecha del pago:</label>
+    <input type="date" id="fecha" name="fecha" required />
+
+    <label for="metodo">Método de pago:</label>
+    <select id="metodo" name="metodo" required>
+      <option value="">Seleccione</option>
+      <option value="efectivo">Efectivo</option>
+      <option value="tarjeta">Tarjeta</option>
+      <option value="transferencia">Transferencia</option>
+    </select>
+
+    <button type="submit">Registrar</button>
+  </form>
+
+  <script src="registro_pago.js"></script>
+</body>
+</html>
